@@ -171,127 +171,96 @@
   <!-- Experience Section -->
   <section class="p-4 md:p-8 max-w-5xl mx-auto">
     <h2 class="text-xl md:text-2xl font-semibold mb-6 md:mb-8 text-center">Work Experience</h2>
-    <div class="relative flex flex-col items-center" style="min-height: 950px;">
-      <!-- S-shape Ladder Timeline SVG: clean, smooth S-curve, clear milestones -->
-      <svg class="absolute left-0 top-0 z-0" width="1000" height="950" viewBox="0 0 1000 950" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events:none;">
-        <!-- S-shape rails (single smooth S-curve for clarity) -->
-        <path d="M180 180 C180 400, 700 400, 700 600 S180 800, 180 900" stroke="#2563eb" stroke-width="12" fill="none" stroke-linecap="round"/>
-        <path d="M230 140 C230 360, 750 360, 750 560 S230 760, 230 860" stroke="#2563eb" stroke-width="12" fill="none" stroke-linecap="round"/>
-        <!-- Rungs at milestones (perpendicular to rails at milestone points) -->
-        <g stroke="#60a5fa" stroke-width="8" stroke-linecap="round" opacity="0.85">
-          <!-- Cognizant -->
-          <line x1="205" y1="160" x2="255" y2="120"/>
-          <!-- DXC -->
-          <line x1="725" y1="580" x2="775" y2="540"/>
-          <!-- ProbytoAI -->
-          <line x1="205" y1="840" x2="255" y2="800"/>
-        </g>
-        <!-- Year markers at milestones -->
-        <circle cx="230" cy="140" r="19" fill="#2563eb" stroke="#fff" stroke-width="5" filter="url(#glow)"/>
-        <circle cx="750" cy="560" r="19" fill="#2563eb" stroke="#fff" stroke-width="5" filter="url(#glow)"/>
-        <circle cx="230" cy="860" r="19" fill="#2563eb" stroke="#fff" stroke-width="5" filter="url(#glow)"/>
-        <defs>
-          <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="7" result="coloredBlur"/>
-            <feMerge>
-              <feMergeNode in="coloredBlur"/>
-              <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-          </filter>
-        </defs>
-        <!-- Year labels (offset for clarity) -->
-        <text x="60" y="150" font-size="20" fill="#2563eb" font-weight="bold" font-family="sans-serif">2024–Present</text>
-        <text x="780" y="570" font-size="20" fill="#2563eb" font-weight="bold" font-family="sans-serif">2021–2024</text>
-        <text x="60" y="870" font-size="20" fill="#2563eb" font-weight="bold" font-family="sans-serif">2021</text>
-        <!-- Human climbing at DXC rung (middle milestone) -->
-        <g>
-          <!-- Head -->
-          <circle cx="750" cy="560" r="16" fill="#fbbf24" stroke="#374151" stroke-width="2"/>
-          <!-- Body -->
-          <line x1="750" y1="576" x2="750" y2="610" stroke="#374151" stroke-width="6" stroke-linecap="round"/>
-          <!-- Left arm -->
-          <line x1="750" y1="590" x2="735" y2="575" stroke="#374151" stroke-width="5" stroke-linecap="round"/>
-          <!-- Right arm -->
-          <line x1="750" y1="590" x2="765" y2="550" stroke="#374151" stroke-width="5" stroke-linecap="round"/>
-          <!-- Left leg -->
-          <line x1="750" y1="610" x2="740" y2="635" stroke="#374151" stroke-width="5" stroke-linecap="round"/>
-          <!-- Right leg -->
-          <line x1="750" y1="610" x2="760" y2="635" stroke="#374151" stroke-width="5" stroke-linecap="round"/>
-          <!-- Backpack -->
-          <ellipse cx="742" cy="590" rx="6" ry="12" fill="#60a5fa" opacity="0.7"/>
-        </g>
-      </svg>
-      <!-- Cognizant Card (top right of ladder, moved up) -->
-      <div class="absolute" style="top:60px; left:340px; width:340px; z-index:10;">
-        <div class="bg-white rounded-lg shadow-lg p-3 md:p-4 border-l-4 border-blue-800 w-64 md:w-60 mb-8">
-          <div class="flex flex-col items-start mb-2">
-            <h3 class="text-sm md:text-base font-bold text-blue-900">Programmer Analyst – Cognizant</h3>
-            <p class="text-xs text-gray-500">Feb 2024 – Present</p>
-            <span class="text-xs text-gray-700 font-semibold">Chennai, IN</span>
+    <div class="flex flex-col gap-6">
+      <!-- Cognizant Card -->
+      <div class="relative transition-all duration-300 bg-white rounded-lg shadow-lg border-l-4 border-blue-800 overflow-hidden group">
+        <div class="flex flex-col md:flex-row">
+          <div class="flex-1 p-4">
+            <div class="flex flex-col items-start mb-2">
+              <h3 class="text-base font-bold text-blue-900">Programmer Analyst – Cognizant</h3>
+              <p class="text-xs text-gray-500">Feb 2024 – Present</p>
+              <span class="text-xs text-gray-700 font-semibold">Chennai, IN</span>
+            </div>
+            <ul class="list-disc list-inside text-gray-700 space-y-1 text-xs">
+              <li>Streamlined contact centre backend automation with enterprise chatbot for authorized workflow automation using Lex Bot, Connect Chat, AWS Lambda, Step-Functions that integrated with ServiceNow API for automating agent onboarding/offboarding and enhanced data retrieval for detailed agent activity and incident reporting, boosting overall efficiency.</li>
+            </ul>
+            <div id="cognizant-expand" class="hidden mt-2">
+              <ul class="list-disc list-inside text-gray-700 space-y-1 text-xs">
+                <li>Evaluated and refined software architectures by conducting comprehensive software evaluations, leading to a 30% increase in system robustness over a 6-month period using AWS tools.</li>
+                <li>Experienced with DynamoDB, S3, SNS, Cognito, and more, and applied DevOps practices to streamline CI/CD and containerization workflows with Code Commit, Code Pipelines, Code Build, Code Deploy.</li>
+                <li>Proficient in backend development with NodeJS, Python, and microservices, along with expertise in implementing database indexing strategies that improved query performance by 30%.</li>
+                <li>Hands-on experience with GCP CCAI & Dialogflow for Virtual Agent integration in customer support and CRM Applications for automated customer interactions.</li>
+                <li>Leveraged Docker and Kubernetes to build and maintain robust, scalable deployment environments.</li>
+                <li>Strong communicator, collaborative, and skilled in architectural analysis for cloud-based IaaS, CaaS, SaaS Applications, contributed in client discussions & demos, Create Prototypes & Conduct PoCs.</li>
+                <li>Built real-time incident reporting dashboards using ReactJs, DynamoDB, Athena, and QuickSight, reducing 40% manual effort.</li>
+                <li>Integrated AWS Glue and Lambda for automating data transformation and processing, increasing data retrieval efficiency by 50%.</li>
+                <li>Integrated NLP libraries into serverless architectures, enabling intelligent text processing and automated responses & worked closely with data engineers and analysts to improve data quality, implementing validation checks in ETL workflows.</li>
+                <li>Spearheaded cloud migrations to AWS for legacy systems, achieving a 50% reduction in operational costs over 4 months using AWS Lambda, DynamoDB and S3 for data storage and processing.</li>
+                <li>Expertise in designing and implementing RESTful APIs or GraphQL endpoints and proficient in implementing user authentication mechanisms (e.g., JWT, OAuth, or OAuth2) to secure applications.</li>
+              </ul>
+            </div>
           </div>
-          <ul class="list-disc list-inside text-gray-700 space-y-1 text-xs">
-            <li>Streamlined contact centre backend automation with enterprise chatbot for authorized workflow automation using Lex Bot, Connect Chat, AWS Lambda, Step-Functions that integrated with ServiceNow API for automating agent onboarding/offboarding and enhanced data retrieval for detailed agent activity and incident reporting, boosting overall efficiency.</li>
-          </ul>
-          <ul id="cognizant-more" class="list-disc list-inside text-gray-700 space-y-1 text-xs mt-1 hidden">
-            <li>Evaluated and refined software architectures by conducting comprehensive software evaluations, leading to a 30% increase in system robustness over a 6-month period using AWS tools.</li>
-            <li>Experienced with DynamoDB, S3, SNS, Cognito, and more, and applied DevOps practices to streamline CI/CD and containerization workflows with Code Commit, Code Pipelines, Code Build, Code Deploy.</li>
-            <li>Proficient in backend development with NodeJS, Python, and microservices, along with expertise in implementing database indexing strategies that improved query performance by 30%.</li>
-            <li>Hands-on experience with GCP CCAI & Dialogflow for Virtual Agent integration in customer support and CRM Applications for automated customer interactions.</li>
-            <li>Leveraged Docker and Kubernetes to build and maintain robust, scalable deployment environments.</li>
-            <li>Strong communicator, collaborative, and skilled in architectural analysis for cloud-based IaaS, CaaS, SaaS Applications, contributed in client discussions & demos, Create Prototypes & Conduct PoCs.</li>
-            <li>Built real-time incident reporting dashboards using ReactJs, DynamoDB, Athena, and QuickSight, reducing 40% manual effort.</li>
-            <li>Integrated AWS Glue and Lambda for automating data transformation and processing, increasing data retrieval efficiency by 50%.</li>
-            <li>Integrated NLP libraries into serverless architectures, enabling intelligent text processing and automated responses & worked closely with data engineers and analysts to improve data quality, implementing validation checks in ETL workflows.</li>
-            <li>Spearheaded cloud migrations to AWS for legacy systems, achieving a 50% reduction in operational costs over 4 months using AWS Lambda, DynamoDB and S3 for data storage and processing.</li>
-            <li>Expertise in designing and implementing RESTful APIs or GraphQL endpoints and proficient in implementing user authentication mechanisms (e.g., JWT, OAuth, or OAuth2) to secure applications.</li>
-          </ul>
-          <button id="showMoreCognizant" class="mt-2 text-blue-700 hover:underline text-xs font-semibold focus:outline-none">Show more</button>
+          <div class="flex items-center md:items-start p-4">
+            <button id="showMoreCognizant" class="bg-blue-700 text-white px-4 py-2 rounded font-semibold text-xs hover:bg-blue-800 transition">Show more</button>
+          </div>
         </div>
       </div>
-      <!-- DXC Technology Card (middle right of ladder, moved up) -->
-      <div class="absolute" style="top:420px; left:640px; width:340px; z-index:10;">
-        <div class="bg-white rounded-lg shadow-lg p-3 md:p-4 border-l-4 border-blue-600 w-64 md:w-60 mb-8">
-          <div class="flex flex-col items-start mb-2">
-            <h3 class="text-sm md:text-base font-bold text-blue-800">Analyst 2 Software Engineer – DXC Technology</h3>
-            <p class="text-xs text-gray-500">Aug 2021 – Jan 2024</p>
-            <span class="text-xs text-gray-700 font-semibold">Chennai, IN</span>
+      <!-- DXC Technology Card -->
+      <div class="relative transition-all duration-300 bg-white rounded-lg shadow-lg border-l-4 border-blue-600 overflow-hidden group">
+        <div class="flex flex-col md:flex-row">
+          <div class="flex-1 p-4">
+            <div class="flex flex-col items-start mb-2">
+              <h3 class="text-base font-bold text-blue-800">Analyst 2 Software Engineer – DXC Technology</h3>
+              <p class="text-xs text-gray-500">Aug 2021 – Jan 2024</p>
+              <span class="text-xs text-gray-700 font-semibold">Chennai, IN</span>
+            </div>
+            <ul class="list-disc list-inside text-gray-700 space-y-1 text-xs">
+              <li>Proficient in NodeJS, Python, microservices with CloudFormation, enhancing scalability and performance.</li>
+            </ul>
+            <div id="dxc-expand" class="hidden mt-2">
+              <ul class="list-disc list-inside text-gray-700 space-y-1 text-xs">
+                <li>Created data pipelines supporting large-scale enterprise analytics using AWS services (S3, Lambda, Kinesis, Athena).</li>
+                <li>Reduced latency by 70% with REST APIs, automated AWS integrations, and implemented CICD pipelines using test-driven development to boost efficiency and meet client goals in Agile environments.</li>
+                <li>Spearheaded security measures using AWS Identity and Access Management (IAM).</li>
+                <li>Contributed in serverless transformation of backend systems, improving scalability and reducing operational costs by 50%.</li>
+                <li>Migrated legacy databases to NoSQL (MongoDB, DynamoDB), reducing query response time by 25%.</li>
+                <li>Automated data ingestion workflows using AWS Step Functions and Lambda, cutting manual processing time by 60%.</li>
+                <li>Developed monitoring and alerting solutions using CloudWatch, ensuring 99.9% uptime of data services. Mentored junior engineers, conducting code reviews and knowledge-sharing sessions on data engineering best practices.</li>
+                <li>Expertise in end-to-end integration of Amazon Connect, Amazon Lex, Lambda, Kinesis, Athena, Pinpoint, Comprehend, Transcribe, automated 60% of manual tasks, resulting in a 30% reduction in operational costs and 50% increase in data processing efficiency.</li>
+                <li>Built multi-language IVR flows with expertise in queue routing, Lambda integration, security, call flow optimization, inbound/outbound strategies, and contact centre metrics (OKRs).</li>
+              </ul>
+            </div>
           </div>
-          <ul class="list-disc list-inside text-gray-700 space-y-1 text-xs">
-            <li>Proficient in NodeJS, Python, microservices with CloudFormation, enhancing scalability and performance.</li>
-          </ul>
-          <ul id="dxc-more" class="list-disc list-inside text-gray-700 space-y-1 text-xs mt-1 hidden">
-            <li>Created data pipelines supporting large-scale enterprise analytics using AWS services (S3, Lambda, Kinesis, Athena).</li>
-            <li>Reduced latency by 70% with REST APIs, automated AWS integrations, and implemented CICD pipelines using test-driven development to boost efficiency and meet client goals in Agile environments.</li>
-            <li>Spearheaded security measures using AWS Identity and Access Management (IAM).</li>
-            <li>Contributed in serverless transformation of backend systems, improving scalability and reducing operational costs by 50%.</li>
-            <li>Migrated legacy databases to NoSQL (MongoDB, DynamoDB), reducing query response time by 25%.</li>
-            <li>Automated data ingestion workflows using AWS Step Functions and Lambda, cutting manual processing time by 60%.</li>
-            <li>Developed monitoring and alerting solutions using CloudWatch, ensuring 99.9% uptime of data services. Mentored junior engineers, conducting code reviews and knowledge-sharing sessions on data engineering best practices.</li>
-            <li>Expertise in end-to-end integration of Amazon Connect, Amazon Lex, Lambda, Kinesis, Athena, Pinpoint, Comprehend, Transcribe, automated 60% of manual tasks, resulting in a 30% reduction in operational costs and 50% increase in data processing efficiency.</li>
-            <li>Built multi-language IVR flows with expertise in queue routing, Lambda integration, security, call flow optimization, inbound/outbound strategies, and contact centre metrics (OKRs).</li>
-          </ul>
-          <button id="showMoreDXC" class="mt-2 text-blue-700 hover:underline text-xs font-semibold focus:outline-none">Show more</button>
+          <div class="flex items-center md:items-start p-4">
+            <button id="showMoreDXC" class="bg-blue-700 text-white px-4 py-2 rounded font-semibold text-xs hover:bg-blue-800 transition">Show more</button>
+          </div>
         </div>
       </div>
-      <!-- ProbytoAI Card (bottom right of ladder, moved up) -->
-      <div class="absolute" style="top:780px; left:340px; width:340px; z-index:10;">
-        <div class="bg-white rounded-lg shadow-lg p-3 md:p-4 border-l-4 border-blue-400 w-64 md:w-60 mb-8">
-          <div class="flex flex-col items-start mb-2">
-            <h3 class="text-sm md:text-base font-bold text-blue-600">Analyst (AI Tech Engineer) – ProbytoAI (SaaS Startup) – Intern</h3>
-            <p class="text-xs text-gray-500">Feb 2021 – May 2021</p>
+      <!-- ProbytoAI Card -->
+      <div class="relative transition-all duration-300 bg-white rounded-lg shadow-lg border-l-4 border-blue-400 overflow-hidden group">
+        <div class="flex flex-col md:flex-row">
+          <div class="flex-1 p-4">
+            <div class="flex flex-col items-start mb-2">
+              <h3 class="text-base font-bold text-blue-600">Analyst (AI Tech Engineer) – ProbytoAI (SaaS Startup) – Intern</h3>
+              <p class="text-xs text-gray-500">Feb 2021 – May 2021</p>
+            </div>
+            <ul class="list-disc list-inside text-gray-700 space-y-1 text-xs">
+              <li>Conducted rigorous SaaS testing and meticulously documented results, informing high-level designs; identified and resolved 10+ critical bugs, resulting in a 12% increase in application stability and user satisfaction.</li>
+            </ul>
+            <div id="probyto-expand" class="hidden mt-2">
+              <ul class="list-disc list-inside text-gray-700 space-y-1 text-xs">
+                <li>Communicating complex technical information to senior executives and regulatory bodies, using clear and concise data metrics; facilitated understanding of AI model performance and compliance requirements, enabling informed decision-making.</li>
+                <li>Written and built statistical model for Dashboard data metrics flows.</li>
+              </ul>
+            </div>
           </div>
-          <ul class="list-disc list-inside text-gray-700 space-y-1 text-xs">
-            <li>Conducted rigorous SaaS testing and meticulously documented results, informing high-level designs; identified and resolved 10+ critical bugs, resulting in a 12% increase in application stability and user satisfaction.</li>
-          </ul>
-          <ul id="probyto-more" class="list-disc list-inside text-gray-700 space-y-1 text-xs mt-1 hidden">
-            <li>Communicating complex technical information to senior executives and regulatory bodies, using clear and concise data metrics; facilitated understanding of AI model performance and compliance requirements, enabling informed decision-making.</li>
-            <li>Written and built statistical model for Dashboard data metrics flows.</li>
-          </ul>
-          <button id="showMoreProbyto" class="mt-2 text-blue-700 hover:underline text-xs font-semibold focus:outline-none">Show more</button>
+          <div class="flex items-center md:items-start p-4">
+            <button id="showMoreProbyto" class="bg-blue-700 text-white px-4 py-2 rounded font-semibold text-xs hover:bg-blue-800 transition">Show more</button>
+          </div>
         </div>
       </div>
       <!-- Qualifications (centered at bottom) -->
-      <div class="absolute left-1/2 transform -translate-x-1/2 bottom-0 z-20 mt-10" style="margin-bottom: -60px;">
+      <div class="flex flex-col items-center mt-8">
         <h2 class="text-base md:text-lg font-semibold mb-2">Qualifications</h2>
         <ul class="list-disc list-inside text-gray-700 space-y-1 text-xs md:text-sm">
           <li>Bachelor in Technology (Information Technology) – GGSIPU, New Delhi</li>
@@ -299,43 +268,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Projects Section -->
-  <section class="bg-gray-100 p-4 md:p-8">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-xl md:text-2xl font-semibold mb-4">Key Projects</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-        <div class="bg-white p-3 md:p-4 rounded-lg shadow">
-          <h3 class="font-bold text-base md:text-lg">Contact Center Chatbot Automation</h3>
-          <p class="text-gray-700 text-xs md:text-sm">Enterprise Lex Bot integrated with Connect & ServiceNow to automate agent workflows.</p>
-        </div>
-        <div class="bg-white p-3 md:p-4 rounded-lg shadow">
-          <h3 class="font-bold text-base md:text-lg">Incident Dashboard</h3>
-          <p class="text-gray-700 text-xs md:text-sm">Built real-time dashboard with AWS Lambda, S3, DynamoDB, SNS, Cognito, and Athena.</p>
-        </div>
-        <div class="bg-white p-3 md:p-4 rounded-lg shadow">
-          <h3 class="font-bold text-base md:text-lg">Legacy to Serverless Migration</h3>
-          <p class="text-gray-700 text-xs md:text-sm">Reduced operational cost by 50% and enhanced scalability using serverless AWS architecture.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education & Certifications -->
-  <section class="p-4 md:p-8 max-w-5xl mx-auto">
-    <h2 class="text-xl md:text-2xl font-semibold mb-4">Education & Certifications</h2>
-    <ul class="text-gray-700 space-y-2 text-sm md:text-base">
-      <li>Bachelor’s in Computer Science – [Your University], [Year]</li>
-      <li>AWS Certified Solutions Architect – Associate</li>
-      <li>Google Cloud Certified – Cloud Digital Leader</li>
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <footer class="bg-blue-900 text-white p-4 md:p-6 text-center text-xs md:text-base">
-    <p>📍 Based in India | 📧 vishal@example.com | 🌐 www.linkedin.com/in/vishal-jha</p>
-  </footer>
-
   <style>
     /* filepath: /Users/vishaljha/Applications/vscode/CognizantWork/React_app/Jha-vishal.github.io/index2.html */
     .carousel-circle {
@@ -417,6 +349,12 @@
         width: 180px;
         height: 140px;
       }
+    }
+    /* Experience Card Expand Animation */
+    .expand-horizontal {
+      max-width: 1000px;
+      transition: max-width 0.4s cubic-bezier(.4,2,.6,1), background 0.3s;
+      background: #f1f5f9;
     }
   </style>
   <script>
@@ -519,34 +457,38 @@
         modal.classList.add('hidden');
       });
 
-      // Show more/less for Cognizant card
+      // Experience Card Expand Logic
+      // Cognizant
       const showMoreBtn = document.getElementById('showMoreCognizant');
-      const moreList = document.getElementById('cognizant-more');
+      const moreList = document.getElementById('cognizant-expand');
       let expanded = false;
       showMoreBtn.addEventListener('click', function() {
         expanded = !expanded;
         moreList.classList.toggle('hidden', !expanded);
         showMoreBtn.textContent = expanded ? 'Show less' : 'Show more';
+        showMoreBtn.closest('.relative').classList.toggle('expand-horizontal', expanded);
       });
 
-      // Show more/less for DXC card
+      // DXC
       const showMoreDXC = document.getElementById('showMoreDXC');
-      const dxcMore = document.getElementById('dxc-more');
+      const dxcMore = document.getElementById('dxc-expand');
       let expandedDXC = false;
       showMoreDXC.addEventListener('click', function() {
         expandedDXC = !expandedDXC;
         dxcMore.classList.toggle('hidden', !expandedDXC);
         showMoreDXC.textContent = expandedDXC ? 'Show less' : 'Show more';
+        showMoreDXC.closest('.relative').classList.toggle('expand-horizontal', expandedDXC);
       });
 
-      // Show more/less for ProbytoAI card
+      // Probyto
       const showMoreProbyto = document.getElementById('showMoreProbyto');
-      const probytoMore = document.getElementById('probyto-more');
+      const probytoMore = document.getElementById('probyto-expand');
       let expandedProbyto = false;
       showMoreProbyto.addEventListener('click', function() {
         expandedProbyto = !expandedProbyto;
         probytoMore.classList.toggle('hidden', !expandedProbyto);
         showMoreProbyto.textContent = expandedProbyto ? 'Show less' : 'Show more';
+        showMoreProbyto.closest('.relative').classList.toggle('expand-horizontal', expandedProbyto);
       });
     });
   </script>
